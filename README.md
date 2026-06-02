@@ -9,13 +9,13 @@ the objective-evaluation toolkit used in:
 The benchmark covers **five tasks** that drive speaker generation from
 different voice-description modalities:
 
-| Task        | Voice description | Content donor    | Notes                                 |
-|-------------|-------------------|------------------|---------------------------------------|
-| `face_tts`  | face image        | input text       | speaker identity from face            |
-| `face_vc`   | face image        | source speech    | preserve source content + prosody     |
-| `text_tts`  | text description  | input text       | speaker identity from text prompt     |
-| `text_vc`   | text description  | source speech    | preserve source content + prosody     |
-| `ave`       | attribute prompt  | source speech    | edit one voice attribute of source    |
+| Task        | Voice description |
+|-------------|-------------------|
+| `face_tts`  | face image        | 
+| `face_vc`   | face image        | 
+| `text_tts`  | text description  | 
+| `text_vc`   | text description  | 
+| `ave`       | attribute prompt  | 
 
 Three objective dimensions are reported:
 
@@ -23,7 +23,6 @@ Three objective dimensions are reported:
 * **Voice diversity**   — SSD
 * **Speech quality**    — WER
 
-(MOS-Match and MOS-Nat from the paper are subjective and not part of this toolkit.)
 
 
 
@@ -75,10 +74,10 @@ Save it locally and pass the path via `--spk_onnx`.
 
 ## Running the evaluator
 
-### Quick start
+### Quick start — directly on a bundled `.lst`
 
 ```bash
-python scripts/eval/unispeaker/eval.py \
+python scripts/eval/unispeaker/eval_unispeaker.py \
     --manifest scripts/eval/unispeaker/face/facetts.lst \
     --task     face_tts \
     --data_root /path/to/mvc_data_root \
