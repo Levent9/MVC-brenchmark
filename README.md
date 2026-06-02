@@ -37,8 +37,8 @@ utterance id**; columns 2 – 4 differ per task and are interpreted as below.
 |-------------|-----------------------------------------------------------------------------|
 | `face_tts`  | `wav_id` \| `tgt_wav` \| `face_image` \| `text`                             |
 | `face_vc`   | `wav_id` \| `tgt_wav` \| `face_image` \| `source_wav`                       |
-| `text_tts`  | `wav_id` \| `tgt_wav` \| `text_description` \| `text`                       |
-| `text_vc`   | `wav_id` \| `tgt_wav` \| `text_description` \| `source_wav`                 |
+| `text_tts`  | `wav_id` \| `tgt_wav` \| `text_prompt` \| `text`                       |
+| `text_vc`   | `wav_id` \| `tgt_wav` \| `text_prompt` \| `source_wav`                 |
 | `ave`       | `wav_id` \| `tgt_wav` \| `attribute_prompt` \| `source_wav`                 |
 
 ---
