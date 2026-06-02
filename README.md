@@ -13,8 +13,8 @@ different voice-description modalities:
 |-------------|-------------------|
 | `face_tts`  | face image        | 
 | `face_vc`   | face image        | 
-| `text_tts`  | text description  | 
-| `text_vc`   | text description  | 
+| `text_tts`  | text prompt       | 
+| `text_vc`   | text prompt       | 
 | `ave`       | attribute prompt  | 
 
 Three objective dimensions are reported:
